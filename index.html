@@ -17,6 +17,14 @@
         }
     </style>
     <script>
+        const reviews = {
+            "msg" : "string",
+            "img" : "string",
+            "name" : "string",
+            "title" : "string",
+        }
+    </script>
+    <script>
         tailwind.config = {
             theme: {
                 container: {
@@ -49,12 +57,12 @@
     
 
     
-    <div class="w-full flex min-h-[100vh] h-full bg-cover bg-center bg-no-repeat bg-[url('hero.png')]">
+    <div class="w-full flex min-h-[100vh] h-full bg-cover bg-center bg-no-repeat bg-[url('public/hero.webp')]">
         <div class="w-full min-h-full flex flex-1">
             <div class="container flex flex-col flex-1 h-full ">
                 <nav class="w-full flex flex-col pt-4 md:py-8 border-b border-border">
                     <div class="w-full flex items-center justify-between">
-                        <img src="logo.svg" class="w-[220px]" alt="">
+                        <img src="public/logo.svg" class="w-[220px]" alt="">
                         <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -146,9 +154,9 @@
                         <p class="text-xl font-bold text-primary mb-3">مواد دراسية شاملة</p>
                         <p class="text-sm font-normal text-center text-[#4D5E6A]">مواد دراسية شاملة وتدريبات تطبيقية</p>
                     </div>
-                    <div class="flex-1 flex flex-col items-center justify-center bg-secondary shadow-sm rounded-3xl py-14 relative">
+                    <div class="flex-1 flex flex-col items-center justify-center bg-secondary shadow-sm rounded-3xl px-4 py-14 relative">
                         <p class="text-base font-medium text-white text-center mb-6">يمكنك الآن تصفح دوراتنا وكتبنا</p>
-                        <a class="flex items-center justify-center py-[15px] px-11 rounded-3xl bg-primary">
+                        <a class="flex items-center justify-center py-[15px] px-5 sm:px-11 rounded-3xl bg-primary">
                             <span class="text-sm font-bold text-white">جميع الدورات</span>
                         </a>
                         
@@ -210,7 +218,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
-                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.jpg')] bg-cover bg-center bg-no-repeat relative">
+                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
                                         <div class="absolute top-6 right-6 flex gap-2">
                                             <div class="flex items-center justify-center text-white font-bold bg-secondary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
                                                 التحصيلي
@@ -244,7 +252,7 @@
                                                 <span class="font-bold text-lg text-secondary">190 ر.س</span>
                                                 <span class="line-through text-[#939295]">250ر.س</span>
                                             </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-8 cursor-pointer">
+                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
                                                     انضم الى الدورة
                                                 </span>
@@ -260,7 +268,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
-                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.jpg')] bg-cover bg-center bg-no-repeat relative">
+                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
                                         <div class="absolute top-6 right-6 flex gap-2">
                                             <div class="flex items-center justify-center text-white font-bold bg-secondary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
                                                 التحصيلي
@@ -294,7 +302,7 @@
                                                 <span class="font-bold text-lg text-secondary">190 ر.س</span>
                                                 <span class="line-through text-[#939295]">250ر.س</span>
                                             </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-8 cursor-pointer">
+                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
                                                     انضم الى الدورة
                                                 </span>
@@ -310,7 +318,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
-                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.jpg')] bg-cover bg-center bg-no-repeat relative">
+                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
                                         <div class="absolute top-6 right-6 flex gap-2">
                                             <div class="flex items-center justify-center text-white font-bold bg-secondary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
                                                 التحصيلي
@@ -344,7 +352,7 @@
                                                 <span class="font-bold text-lg text-secondary">190 ر.س</span>
                                                 <span class="line-through text-[#939295]">250ر.س</span>
                                             </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-8 cursor-pointer">
+                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
                                                     انضم الى الدورة
                                                 </span>
@@ -360,7 +368,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
-                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.jpg')] bg-cover bg-center bg-no-repeat relative">
+                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
                                         <div class="absolute top-6 right-6 flex gap-2">
                                             <div class="flex items-center justify-center text-white font-bold bg-secondary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
                                                 التحصيلي
@@ -394,7 +402,7 @@
                                                 <span class="font-bold text-lg text-secondary">190 ر.س</span>
                                                 <span class="line-through text-[#939295]">250ر.س</span>
                                             </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-8 cursor-pointer">
+                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
                                                     انضم الى الدورة
                                                 </span>
@@ -410,7 +418,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
-                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.jpg')] bg-cover bg-center bg-no-repeat relative">
+                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
                                         <div class="absolute top-6 right-6 flex gap-2">
                                             <div class="flex items-center justify-center text-white font-bold bg-secondary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
                                                 التحصيلي
@@ -444,7 +452,7 @@
                                                 <span class="font-bold text-lg text-secondary">190 ر.س</span>
                                                 <span class="line-through text-[#939295]">250ر.س</span>
                                             </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-8 cursor-pointer">
+                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
                                                     انضم الى الدورة
                                                 </span>
@@ -460,7 +468,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
-                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.jpg')] bg-cover bg-center bg-no-repeat relative">
+                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
                                         <div class="absolute top-6 right-6 flex gap-2">
                                             <div class="flex items-center justify-center text-white font-bold bg-secondary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
                                                 التحصيلي
@@ -494,7 +502,7 @@
                                                 <span class="font-bold text-lg text-secondary">190 ر.س</span>
                                                 <span class="line-through text-[#939295]">250ر.س</span>
                                             </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-8 cursor-pointer">
+                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-3 sm:px-8 cursor-pointer">
                                                 <span>
                                                     انضم الى الدورة
                                                 </span>
@@ -542,7 +550,7 @@
                                 <div class="swiper-slide">
                                     <div class="flex h-auto w-full flex-row items-start justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
                                         <div
-                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.jpg')] bg-cover bg-center bg-no-repeat"
+                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
                                         ></div>
                                         <div class="px-6 py-9 w-full flex flex-col bg-white">
                                             <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف</h2>
@@ -550,7 +558,7 @@
                                                 <span class="font-bold text-lg text-secondary">170 ر.س</span>
                                                 <span class="line-through text-[#939295]">250ر.س</span>
                                             </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-8 cursor-pointer">
+                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
                                                     انضم الى الدورة
                                                 </span>
@@ -566,7 +574,7 @@
                                 <div class="swiper-slide">
                                     <div class="flex h-auto w-full flex-row items-start justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
                                         <div
-                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.jpg')] bg-cover bg-center bg-no-repeat"
+                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
                                         ></div>
                                         <div class="px-6 py-9 w-full flex flex-col bg-white">
                                             <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف</h2>
@@ -574,7 +582,7 @@
                                                 <span class="font-bold text-lg text-secondary">170 ر.س</span>
                                                 <span class="line-through text-[#939295]">250ر.س</span>
                                             </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-8 cursor-pointer">
+                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
                                                     انضم الى الدورة
                                                 </span>
@@ -590,7 +598,7 @@
                                 <div class="swiper-slide">
                                     <div class="flex h-auto w-full flex-row items-start justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
                                         <div
-                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.jpg')] bg-cover bg-center bg-no-repeat"
+                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
                                         ></div>
                                         <div class="px-6 py-9 w-full flex flex-col bg-white">
                                             <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف</h2>
@@ -598,7 +606,7 @@
                                                 <span class="font-bold text-lg text-secondary">170 ر.س</span>
                                                 <span class="line-through text-[#939295]">250ر.س</span>
                                             </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-8 cursor-pointer">
+                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
                                                     انضم الى الدورة
                                                 </span>
@@ -614,7 +622,7 @@
                                 <div class="swiper-slide">
                                     <div class="flex h-auto w-full flex-row items-start justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
                                         <div
-                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.jpg')] bg-cover bg-center bg-no-repeat"
+                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
                                         ></div>
                                         <div class="px-6 py-9 w-full flex flex-col bg-white">
                                             <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف</h2>
@@ -622,7 +630,7 @@
                                                 <span class="font-bold text-lg text-secondary">170 ر.س</span>
                                                 <span class="line-through text-[#939295]">250ر.س</span>
                                             </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-8 cursor-pointer">
+                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
                                                     انضم الى الدورة
                                                 </span>
@@ -650,7 +658,7 @@
                         <div class="flex flex-col justify-center w-full">
                             <h3 class="text-2xl sm:text-4xl font-bold text-white mb-4">الكتب التعليمية للأستاذ فهد عبدالله البابطين</h3>
                             <h2 class="text-lg text-[#ECF7F9] mb-8">يمكنك شراء كتب الأستاذ فهد عبد الله البابطين من متجر بيع الكتب الىن</h2>
-                            <div class="flex items-center w-fit justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-8 cursor-pointer mb-11">
+                            <div class="flex items-center w-fit justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer mb-11">
                                 <span>
                                     متجر بيع الكتب
                                 </span>
@@ -881,7 +889,7 @@
     <div class="bg-white pt-40">
         <div class="w-full flex items-center bg-primary rounded-t-[40px] relative">
             <div class="container">
-                <div class="flex justify-center sm:justify-end items-center px-10 md:px-32 min-h-96 h-full rounded-3xl bg-cover bg-left bg-no-repeat bg-[url('public/footer.png')] z-10 -mt-48">
+                <div class="flex justify-center sm:justify-end items-center px-10 md:px-32 min-h-96 h-full rounded-3xl bg-cover bg-left bg-no-repeat bg-[url('public/footer.webp')] z-10 -mt-48">
                     <div class="flex flex-col items-center w-full max-w-[498px]">
                         <p class="text-primary font-medium text-xl mb-2 text-center">انضم إلينا اليوم</p>
                         <h2 class="text-white font-bold text-3xl sm:text-4xl mb-4 text-center">وابدأ رحلتك التعليمية!</h2>
@@ -891,9 +899,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 md:gap-[50px] lg:gap-[90px] xl:gap-[120px] py-20 space-y-10 md:space-y-0">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 md:gap-[50px] lg:gap-[90px] xl:gap-[120px] py-20 border-b border-border space-y-10 md:space-y-0">
                     <div class="md:col-span-2">
-                        <img src="logo.svg" class="w-[220px] mb-8" alt="">
+                        <img src="public/logo.svg" class="w-[220px] mb-8" alt="">
                         <p class="text-base text-[#D0D7DD]">نسعى لتمكين الطلاب من تحقيق أقصى استفادة من دراستهم والتفوق نحن هنا لدعمكم ومساعدتكم على فهم المواد بشكل أفضل واكتساب المهارات اللازمة لتحقيق النجاح.</p>
                     </div>
                     <div class="whitespace-nowrap">
@@ -968,6 +976,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="w-full py-7 text-white text-sm text-center px-4">
+                    الحقوق محفوظة ©2024 مركز فهد البابطين للتدريب
                 </div>
             </div>
         </div>
