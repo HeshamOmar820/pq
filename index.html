@@ -57,7 +57,7 @@
     
 
     
-    <div class="w-full flex min-h-[100vh] h-full bg-cover bg-center bg-no-repeat bg-[url('public/hero.webp')]">
+    <div id="main" class="w-full flex min-h-[100vh] h-full bg-cover bg-center bg-no-repeat bg-[url('public/hero.webp')] section">
         <div class="w-full min-h-full flex flex-1">
             <div class="container flex flex-col flex-1 h-full ">
                 <nav class="w-full flex flex-col pt-4 md:py-8 border-b border-border">
@@ -70,12 +70,12 @@
                             </svg>
                         </button>
                         
-                        <ul class="hidden lg:flex gap-6">
-                            <li class="text-base font-bold text-white">الرئيسية</li>
-                            <li class="text-base font-normal text-white/[0.6]">من نحن</li>
-                            <li class="text-base font-normal text-white/[0.6]">الدورات التعليمية</li>
-                            <li class="text-base font-normal text-white/[0.6]">كتب البابطين</li>
-                            <li class="text-base font-normal text-white/[0.6]">آراء العملاء</li>
+                        <ul class="hidden lg:flex gap-6 navbarLinks">
+                            <li data-target="main" class="text-base font-bold cursor-pointer text-white">الرئيسية</li>
+                            <li data-target="about" class="text-base font-normal cursor-pointer text-white/[0.6]">من نحن</li>
+                            <li data-target="courses" class="text-base font-normal cursor-pointer text-white/[0.6]">الدورات التعليمية</li>
+                            <li data-target="books" class="text-base font-normal cursor-pointer text-white/[0.6]">كتب البابطين</li>
+                            <li data-target="reviews" class="text-base font-normal cursor-pointer text-white/[0.6]">آراء العملاء</li>
                             <li>
                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="Interface / Search_Magnifying_Glass">
@@ -97,12 +97,12 @@
                         </div>
                     </div>
                     <div class="hidden w-full lg:block lg:w-auto" id="navbar-multi-level">
-                        <ul class="flex lg:hidden flex-col py-4 lg:py-0 gap-6">
-                            <li class="text-base font-bold text-white">الرئيسية</li>
-                            <li class="text-base font-normal text-white/[0.6]">من نحن</li>
-                            <li class="text-base font-normal text-white/[0.6]">الدورات التعليمية</li>
-                            <li class="text-base font-normal text-white/[0.6]">كتب البابطين</li>
-                            <li class="text-base font-normal text-white/[0.6]">آراء العملاء</li>
+                        <ul class="flex lg:hidden flex-col py-4 lg:py-0 gap-6 navbarLinks">
+                            <li data-target="main" class="text-base font-bold cursor-pointer text-white">الرئيسية</li>
+                            <li data-target="about" class="text-base font-normal cursor-pointer text-white/[0.6]">من نحن</li>
+                            <li data-target="courses" class="text-base font-normal cursor-pointer text-white/[0.6]">الدورات التعليمية</li>
+                            <li data-target="books" class="text-base font-normal cursor-pointer text-white/[0.6]">كتب البابطين</li>
+                            <li data-target="reviews" class="text-base font-normal cursor-pointer text-white/[0.6]">آراء العملاء</li>
                             <li class="hidden md:flex">
                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="Interface / Search_Magnifying_Glass">
@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full flex bg-white">
+    <div id="about" class="w-full flex bg-white section">
         <div class="container">
             <div class="w-full flex flex-col items-center py-24 flex-1 h-full">
                 <h3 class="text-xl font-bold text-secondary mb-4">لماذا تختارنا ؟</h3>
@@ -175,7 +175,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full flex bg-[#F2F5F7] rounded-t-[40px] py-20 overflow-x-hidden ">
+    <div id="courses" class="w-full flex bg-[#F2F5F7] rounded-t-[40px] py-20 overflow-x-hidden section">
         <div class="container">
             <div class="w-full">
                 <div class="flex justify-between items-start">
@@ -650,7 +650,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-white">
+    <div id="books" class="bg-white section">
         <div class="w-full flex bg-secondary rounded-t-[40px] py-20 overflow-x-hidden ">
             <div class="container">
                 <div class="w-full flex flex-col md:flex-row">
@@ -744,7 +744,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-secondary">
+    <div id="reviews" class="bg-secondary section">
         <div class="w-full flex bg-white rounded-t-[40px] pt-20 pb-40 overflow-x-hidden ">
             <div class="container">
                 <div class="w-full">
@@ -987,8 +987,23 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navbarLinks = document.querySelectorAll('.navbarLinks li');
+            navbarLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('data-target');
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
         var coursesSwiper = new Swiper(".coursesSwiper", {
             slidesPerView: 1,
             spaceBetween: 15,
