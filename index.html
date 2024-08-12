@@ -10,6 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
     <style>
         .testimonialSwiper .swiper-slide-prev,
         .testimonialSwiper .swiper-slide-next {
@@ -47,13 +48,17 @@
                         primary: '#131920',
                         secondary: '#318BA8',
                         border: '#ffffff12',
-                    }
+                    },
+                    fontFamily: {
+                        Cairo: ['Cairo', 'sans-serif'],
+                        Rubik: ['Rubik', 'sans-serif'],
+                    },
                 }
           }
         }
     </script>
 </head>
-<body>
+<body >
     
 
     
@@ -123,9 +128,9 @@
                     </div>
                 </nav>
                 <div class="flex flex-col flex-1 w-full max-w-lg items-start justify-center py-10">
-                    <h2 class="font-bold text-2xl text-secondary mb-8">مرحبا بك في مركز فهد البابطين للتدريب</h2>
-                    <h1 class="font-bold text-5xl text-white mb-7">تحصيلك الأكاديمي في متناول يديك</h1>
-                    <p class="text-sm text-[#D0D7DD] mb-8">نسعى لتمكين الطلاب من تحقيق أقصى استفادة من دراستهم والتفوق نحن هنا لدعمكم ومساعدتكم على فهم المواد بشكل أفضل واكتساب المهارات اللازمة لتحقيق النجاح.</p>
+                    <h2 class="font-bold text-2xl text-secondary mb-8 font-['Cairo']">مرحبا بك في مركز فهد البابطين للتدريب</h2>
+                    <h1 class="font-bold text-5xl text-white mb-7 font-['Cairo']">تحصيلك الأكاديمي في متناول يديك</h1>
+                    <p class="text-sm text-[#D0D7DD] mb-8 font-['Cairo']">نسعى لتمكين الطلاب من تحقيق أقصى استفادة من دراستهم والتفوق نحن هنا لدعمكم ومساعدتكم على فهم المواد بشكل أفضل واكتساب المهارات اللازمة لتحقيق النجاح.</p>
                     <a class="flex items-center justify-center py-[15px] px-10 rounded-3xl bg-secondary">
                         <span class="text-sm font-bold text-white">من نحن</span>
                     </a>
@@ -216,7 +221,7 @@
                 <div class="overflow-x-visible">
                     <div class="swiper coursesSwiper" style="overflow: inherit;">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide h-auto">
                                 <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
                                     <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
                                         <div class="absolute top-6 right-6 flex gap-2">
@@ -229,7 +234,7 @@
                                         </div>
                                     </div>
                                     <div class="px-5 pt-5 w-full bg-white">
-                                        <h2 class="font-bold text-primary mb-4">دورة لطلاب و طالبات التحصيلي العلمي لشرح ((أضخم بنك للأسئلة التحصيلية)) "عربي"</h2>
+                                        <h2 class="font-bold text-primary mb-4">دورة لطلاب و طالبات التحصيلي العلمي لشرح ((أضخم بنك للأسئلة التحصيلية)) "عربي" Lorem ipsum dolor sit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, praesentium nobis alias cumque id mollitia nostrum inventore quo rem repellat fugiat, perferendis odit similique? Laborum fugiat ipsa amet temporibus laudantium.</h2>
                                         <div class="flex gap-10 pb-5 border-b border-[#EDF0F2]">
                                             <div class="flex items-center justify-center gap-2">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -266,8 +271,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
+                            <div class="swiper-slide h-auto">
+                                <div class="flex h-full w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
                                     <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
                                         <div class="absolute top-6 right-6 flex gap-2">
                                             <div class="flex items-center justify-center text-white font-bold bg-secondary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
@@ -278,46 +283,45 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-5 pt-5 w-full bg-white">
-                                        <h2 class="font-bold text-primary mb-4">دورة لطلاب و طالبات التحصيلي العلمي لشرح ((أضخم بنك للأسئلة التحصيلية)) "عربي"</h2>
-                                        <div class="flex gap-10 pb-5 border-b border-[#EDF0F2]">
-                                            <div class="flex items-center justify-center gap-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 7V12H17M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <p class="text-xs text-[#5D666F]">70 ساعة 20 دقيقة</p>
-                                            </div>
-                                            <div class="flex items-center justify-center gap-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M10 15V9L15 12L10 15Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <p class="text-xs text-[#5D666F]">22 درس</p>
+                                    <div class="w-full h-auto flex-1 flex flex-col justify-between bg-white">
+                                        <div class="px-5 pt-5 w-full bg-white">
+                                            <h2 class="font-bold text-primary mb-4">دورة لطلاب و طالبات التحصيلي العلمي لشرح ((أضخم بنك للأسئلة التحصيلية)) "عربي"</h2>
+                                            <div class="flex gap-10 pb-5">
+                                                <div class="flex items-center justify-center gap-2">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 7V12H17M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p class="text-xs text-[#5D666F]">70 ساعة 20 دقيقة</p>
+                                                </div>
+                                                <div class="flex items-center justify-center gap-2">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10 15V9L15 12L10 15Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p class="text-xs text-[#5D666F]">22 درس</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="p-5 w-full bg-white">
-                                        <div class="flex items-center justify-between">
-                                            <div class="flex items-center gap-2">
-                                                <span class="font-bold text-lg text-secondary">190 ر.س</span>
-                                                <span class="line-through text-[#939295]">250ر.س</span>
-                                            </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
-                                                <span>
-                                                    انضم الى الدورة
-                                                </span>
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="Arrow / Arrow_Left_LG">
-                                                        <path id="Vector" d="M2 7.99996L5.33333 11.3333M2 7.99996L5.33333 4.66663M2 7.99996H14" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </g>
-                                                </svg>
+                                        <div class="p-5 w-full bg-white border-t border-[#EDF0F2]">
+                                            <p class="text-xs text-primary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis, optio accusantium veritatis suscipit corrupti ducimus ut modi nobis, impedit beatae. Eveniet commodi exercitationem eius aperiam eos maiores eaque praesentium!</p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="w-full flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
+                                                    <span>
+                                                        انضم الى الدورة
+                                                    </span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g id="Arrow / Arrow_Left_LG">
+                                                            <path id="Vector" d="M2 7.99996L5.33333 11.3333M2 7.99996L5.33333 4.66663M2 7.99996H14" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
+                            <div class="swiper-slide h-auto">
+                                <div class="flex h-full w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
                                     <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
                                         <div class="absolute top-6 right-6 flex gap-2">
                                             <div class="flex items-center justify-center text-white font-bold bg-secondary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
@@ -328,46 +332,48 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-5 pt-5 w-full bg-white">
-                                        <h2 class="font-bold text-primary mb-4">دورة لطلاب و طالبات التحصيلي العلمي لشرح ((أضخم بنك للأسئلة التحصيلية)) "عربي"</h2>
-                                        <div class="flex gap-10 pb-5 border-b border-[#EDF0F2]">
-                                            <div class="flex items-center justify-center gap-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 7V12H17M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <p class="text-xs text-[#5D666F]">70 ساعة 20 دقيقة</p>
-                                            </div>
-                                            <div class="flex items-center justify-center gap-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M10 15V9L15 12L10 15Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <p class="text-xs text-[#5D666F]">22 درس</p>
+                                    <div class="w-full h-auto flex-1 flex flex-col justify-between bg-white">
+                                        <div class="px-5 pt-5 w-full bg-white">
+                                            <h2 class="font-bold text-primary mb-4">دورة لطلاب و طالبات التحصيلي العلمي لشرح ((أضخم بنك للأسئلة التحصيلية)) "عربي"</h2>
+                                            <div class="flex gap-10 pb-5">
+                                                <div class="flex items-center justify-center gap-2">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 7V12H17M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p class="text-xs text-[#5D666F]">70 ساعة 20 دقيقة</p>
+                                                </div>
+                                                <div class="flex items-center justify-center gap-2">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10 15V9L15 12L10 15Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p class="text-xs text-[#5D666F]">22 درس</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="p-5 w-full bg-white">
-                                        <div class="flex items-center justify-between">
-                                            <div class="flex items-center gap-2">
-                                                <span class="font-bold text-lg text-secondary">190 ر.س</span>
-                                                <span class="line-through text-[#939295]">250ر.س</span>
-                                            </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
-                                                <span>
-                                                    انضم الى الدورة
-                                                </span>
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="Arrow / Arrow_Left_LG">
-                                                        <path id="Vector" d="M2 7.99996L5.33333 11.3333M2 7.99996L5.33333 4.66663M2 7.99996H14" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </g>
-                                                </svg>
+                                        <div class="p-5 w-full bg-white border-t border-[#EDF0F2]">
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex items-center gap-2">
+                                                    <span class="font-bold text-lg text-secondary">190 ر.س</span>
+                                                    <span class="line-through text-[#939295]">250ر.س</span>
+                                                </div>
+                                                <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
+                                                    <span>
+                                                        انضم الى الدورة
+                                                    </span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g id="Arrow / Arrow_Left_LG">
+                                                            <path id="Vector" d="M2 7.99996L5.33333 11.3333M2 7.99996L5.33333 4.66663M2 7.99996H14" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
+                            <div class="swiper-slide h-auto">
+                                <div class="flex h-full w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
                                     <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
                                         <div class="absolute top-6 right-6 flex gap-2">
                                             <div class="flex items-center justify-center text-white font-bold bg-secondary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
@@ -378,144 +384,47 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-5 pt-5 w-full bg-white">
-                                        <h2 class="font-bold text-primary mb-4">دورة لطلاب و طالبات التحصيلي العلمي لشرح ((أضخم بنك للأسئلة التحصيلية)) "عربي"</h2>
-                                        <div class="flex gap-10 pb-5 border-b border-[#EDF0F2]">
-                                            <div class="flex items-center justify-center gap-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 7V12H17M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <p class="text-xs text-[#5D666F]">70 ساعة 20 دقيقة</p>
-                                            </div>
-                                            <div class="flex items-center justify-center gap-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M10 15V9L15 12L10 15Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <p class="text-xs text-[#5D666F]">22 درس</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="p-5 w-full bg-white">
-                                        <div class="flex items-center justify-between">
-                                            <div class="flex items-center gap-2">
-                                                <span class="font-bold text-lg text-secondary">190 ر.س</span>
-                                                <span class="line-through text-[#939295]">250ر.س</span>
-                                            </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
-                                                <span>
-                                                    انضم الى الدورة
-                                                </span>
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="Arrow / Arrow_Left_LG">
-                                                        <path id="Vector" d="M2 7.99996L5.33333 11.3333M2 7.99996L5.33333 4.66663M2 7.99996H14" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </g>
-                                                </svg>
+                                    <div class="w-full h-auto flex-1 flex flex-col justify-between bg-white">
+                                        <div class="px-5 pt-5 w-full bg-white">
+                                            <h2 class="font-bold text-primary mb-4">دورة لطلاب و طالبات التحصيلي العلمي لشرح ((أضخم بنك للأسئلة التحصيلية)) "عربي"</h2>
+                                            <div class="flex gap-10 pb-5">
+                                                <div class="flex items-center justify-center gap-2">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 7V12H17M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p class="text-xs text-[#5D666F]">70 ساعة 20 دقيقة</p>
+                                                </div>
+                                                <div class="flex items-center justify-center gap-2">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10 15V9L15 12L10 15Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p class="text-xs text-[#5D666F]">22 درس</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
-                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
-                                        <div class="absolute top-6 right-6 flex gap-2">
-                                            <div class="flex items-center justify-center text-white font-bold bg-secondary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
-                                                التحصيلي
-                                            </div>
-                                            <div class="flex items-center justify-center text-white font-bold bg-primary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
-                                                الأفضل مبيعا
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-5 pt-5 w-full bg-white">
-                                        <h2 class="font-bold text-primary mb-4">دورة لطلاب و طالبات التحصيلي العلمي لشرح ((أضخم بنك للأسئلة التحصيلية)) "عربي"</h2>
-                                        <div class="flex gap-10 pb-5 border-b border-[#EDF0F2]">
-                                            <div class="flex items-center justify-center gap-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 7V12H17M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <p class="text-xs text-[#5D666F]">70 ساعة 20 دقيقة</p>
-                                            </div>
-                                            <div class="flex items-center justify-center gap-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M10 15V9L15 12L10 15Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <p class="text-xs text-[#5D666F]">22 درس</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="p-5 w-full bg-white">
-                                        <div class="flex items-center justify-between">
-                                            <div class="flex items-center gap-2">
-                                                <span class="font-bold text-lg text-secondary">190 ر.س</span>
-                                                <span class="line-through text-[#939295]">250ر.س</span>
-                                            </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
-                                                <span>
-                                                    انضم الى الدورة
-                                                </span>
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="Arrow / Arrow_Left_LG">
-                                                        <path id="Vector" d="M2 7.99996L5.33333 11.3333M2 7.99996L5.33333 4.66663M2 7.99996H14" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </g>
-                                                </svg>
+                                        <div class="p-5 w-full bg-white border-t border-[#EDF0F2]">
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex items-center gap-2">
+                                                    <span class="font-bold text-lg text-secondary">190 ر.س</span>
+                                                    <span class="line-through text-[#939295]">250ر.س</span>
+                                                </div>
+                                                <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
+                                                    <span>
+                                                        انضم الى الدورة
+                                                    </span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g id="Arrow / Arrow_Left_LG">
+                                                            <path id="Vector" d="M2 7.99996L5.33333 11.3333M2 7.99996L5.33333 4.66663M2 7.99996H14" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl">
-                                    <div class="h-80 w-full rounded-t-3xl bg-[url('public/swiper1.webp')] bg-cover bg-center bg-no-repeat relative">
-                                        <div class="absolute top-6 right-6 flex gap-2">
-                                            <div class="flex items-center justify-center text-white font-bold bg-secondary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
-                                                التحصيلي
-                                            </div>
-                                            <div class="flex items-center justify-center text-white font-bold bg-primary text-xs rounded-full py-1 px-4 !whitespace-nowrap cursor-pointer">
-                                                الأفضل مبيعا
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-5 pt-5 w-full bg-white">
-                                        <h2 class="font-bold text-primary mb-4">دورة لطلاب و طالبات التحصيلي العلمي لشرح ((أضخم بنك للأسئلة التحصيلية)) "عربي"</h2>
-                                        <div class="flex gap-10 pb-5 border-b border-[#EDF0F2]">
-                                            <div class="flex items-center justify-center gap-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 7V12H17M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <p class="text-xs text-[#5D666F]">70 ساعة 20 دقيقة</p>
-                                            </div>
-                                            <div class="flex items-center justify-center gap-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M10 15V9L15 12L10 15Z" stroke="#318BA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <p class="text-xs text-[#5D666F]">22 درس</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="p-5 w-full bg-white">
-                                        <div class="flex items-center justify-between">
-                                            <div class="flex items-center gap-2">
-                                                <span class="font-bold text-lg text-secondary">190 ر.س</span>
-                                                <span class="line-through text-[#939295]">250ر.س</span>
-                                            </div>
-                                            <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-3 sm:px-8 cursor-pointer">
-                                                <span>
-                                                    انضم الى الدورة
-                                                </span>
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="Arrow / Arrow_Left_LG">
-                                                        <path id="Vector" d="M2 7.99996L5.33333 11.3333M2 7.99996L5.33333 4.66663M2 7.99996H14" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -547,16 +456,18 @@
                     <div class="overflow-x-visible">
                         <div class="swiper RecentCoursesSwiper" style="overflow: inherit;">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="flex h-auto w-full flex-row items-start justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
+                                <div class="swiper-slide h-auto">
+                                    <div class="flex h-full w-full flex-row items-stretch justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
                                         <div
-                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
+                                            class="w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
                                         ></div>
-                                        <div class="px-6 py-9 w-full flex flex-col bg-white">
-                                            <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف</h2>
-                                            <div class="flex items-center gap-2 mb-6">
-                                                <span class="font-bold text-lg text-secondary">170 ر.س</span>
-                                                <span class="line-through text-[#939295]">250ر.س</span>
+                                        <div class="px-6 py-9 w-full flex flex-col justify-between bg-white">
+                                            <div class="w-full">
+                                                <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف الدورات المضافة حديثا الدورات المضافة حديثا الدورات المضافة حديثا الدورات المضافة حديثا الدورات المضافة حديثا</h2>
+                                                <div class="flex items-center gap-2 mb-6">
+                                                    <span class="font-bold text-lg text-secondary">170 ر.س</span>
+                                                    <span class="line-through text-[#939295]">250ر.س</span>
+                                                </div>
                                             </div>
                                             <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
@@ -571,16 +482,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="flex h-auto w-full flex-row items-start justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
+                                <div class="swiper-slide h-auto">
+                                    <div class="flex h-full w-full flex-row items-stretch justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
                                         <div
-                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
+                                            class="w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
                                         ></div>
-                                        <div class="px-6 py-9 w-full flex flex-col bg-white">
-                                            <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف</h2>
-                                            <div class="flex items-center gap-2 mb-6">
-                                                <span class="font-bold text-lg text-secondary">170 ر.س</span>
-                                                <span class="line-through text-[#939295]">250ر.س</span>
+                                        <div class="px-6 py-9 w-full flex flex-col justify-between bg-white">
+                                            <div class="w-full">
+                                                <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف</h2>
+                                                <div class="flex items-center gap-2 mb-6">
+                                                    <span class="font-bold text-lg text-secondary">170 ر.س</span>
+                                                    <span class="line-through text-[#939295]">250ر.س</span>
+                                                </div>
                                             </div>
                                             <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
@@ -595,16 +508,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="flex h-auto w-full flex-row items-start justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
+                                <div class="swiper-slide h-auto">
+                                    <div class="flex h-full w-full flex-row items-stretch justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
                                         <div
-                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
+                                            class="w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
                                         ></div>
-                                        <div class="px-6 py-9 w-full flex flex-col bg-white">
-                                            <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف</h2>
-                                            <div class="flex items-center gap-2 mb-6">
-                                                <span class="font-bold text-lg text-secondary">170 ر.س</span>
-                                                <span class="line-through text-[#939295]">250ر.س</span>
+                                        <div class="px-6 py-9 w-full flex flex-col justify-between bg-white">
+                                            <div class="w-full">
+                                                <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف</h2>
+                                                <div class="flex items-center gap-2 mb-6">
+                                                    <span class="font-bold text-lg text-secondary">170 ر.س</span>
+                                                    <span class="line-through text-[#939295]">250ر.س</span>
+                                                </div>
                                             </div>
                                             <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
@@ -619,16 +534,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="flex h-auto w-full flex-row items-start justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
+                                <div class="swiper-slide h-auto">
+                                    <div class="flex h-full w-full flex-row items-stretch justify-start overflow-hidden rounded-3xl border border-[#E7EBEE]">
                                         <div
-                                            class="h-64 w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
+                                            class="w-full max-w-[45%] rounded-r-3xl bg-[url('public/swiper2.webp')] bg-cover bg-center bg-no-repeat"
                                         ></div>
-                                        <div class="px-6 py-9 w-full flex flex-col bg-white">
-                                            <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف</h2>
-                                            <div class="flex items-center gap-2 mb-6">
-                                                <span class="font-bold text-lg text-secondary">170 ر.س</span>
-                                                <span class="line-through text-[#939295]">250ر.س</span>
+                                        <div class="px-6 py-9 w-full flex flex-col justify-between bg-white">
+                                            <div class="w-full">
+                                                <h2 class="font-bold text-primary mb-4">دورة الـ ITC لشركة أرامكو السعودية رياضيات + انجليزي - تدريب مكثف</h2>
+                                                <div class="flex items-center gap-2 mb-6">
+                                                    <span class="font-bold text-lg text-secondary">170 ر.س</span>
+                                                    <span class="line-through text-[#939295]">250ر.س</span>
+                                                </div>
                                             </div>
                                             <div class="flex items-center justify-center text-white text-sm font-bold bg-primary rounded-full gap-2 py-[14px] px-4 sm:px-8 cursor-pointer">
                                                 <span>
@@ -678,10 +595,30 @@
                         </div>
                     </div>
                     <div class="flex-1 w-full md:w-2/3 px-4">
-                        <div class="swiper bookSwiper">
+                        <div class="swiper bookSwiper h-full">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl bg-white pt-4 px-4">
+                                <div class="swiper-slide h-auto">
+                                    <a target="_blank" href="http://new.arabsstock.dev/" class="flex h-full w-full flex-col items-start justify-start overflow-hidden rounded-3xl bg-white pt-4 px-4">
+                                        <div class="h-64 w-full flex items-center justify-center rounded-3xl bg-[#F2F5F7] relative">
+                                            <div class="w-full max-w-[50%] h-full  bg-cover bg-center bg-no-repeat" style="background-image: url('/public/book.png')"></div>
+                                            <!-- <img src="public/book.png" class="w-full max-w-[50%]" alt=""> -->
+                                            <div class="absolute top-6 right-6 bg-secondary w-[56px] h-[56px] rounded-full flex flex-col justify-center items-center text-white text-xs font-bold">
+                                                <span>خصم</span>
+                                                <span>50%</span>
+                                            </div>
+                                        </div>
+                                        <div class="px-6 py-10 w-full flex flex-col bg-white">
+                                            <h2 class="font-extrabold text-primary mb-3 text-xl">كتاب كفايات 15 كتاب كفايات 15 كتاب كفايات 15</h2>
+                                            <div class="flex items-center gap-2">
+                                                <span class="font-bold text-lg text-secondary">35 ر.س</span>
+                                                <span class="line-through text-[#939295]">60 ر.س</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div class="flex h-full w-full flex-col items-start justify-start overflow-hidden rounded-3xl bg-white pt-4 px-4">
                                         <div class="h-64 w-full flex items-center justify-center rounded-3xl bg-[#F2F5F7] relative">
                                             <img src="public/book.png" class="w-full max-w-[50%]" alt="">
                                             <div class="absolute top-6 right-6 bg-secondary w-[56px] h-[56px] rounded-full flex flex-col justify-center items-center text-white text-xs font-bold">
@@ -699,27 +636,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl bg-white pt-4 px-4">
-                                        <div class="h-64 w-full flex items-center justify-center rounded-3xl bg-[#F2F5F7] relative">
-                                            <img src="public/book.png" class="w-full max-w-[50%]" alt="">
-                                            <div class="absolute top-6 right-6 bg-secondary w-[56px] h-[56px] rounded-full flex flex-col justify-center items-center text-white text-xs font-bold">
-                                                <span>خصم</span>
-                                                <span>50%</span>
-                                            </div>
-                                        </div>
-                                        <div class="px-6 py-10 w-full flex flex-col bg-white">
-                                            <h2 class="font-extrabold text-primary mb-3 text-xl">كتاب كفايات 15</h2>
-                                            <div class="flex items-center gap-2">
-                                                <span class="font-bold text-lg text-secondary">35 ر.س</span>
-                                                <span class="line-through text-[#939295]">60 ر.س</span>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="flex h-auto w-full flex-col items-start justify-start overflow-hidden rounded-3xl bg-white pt-4 px-4">
+                                <div class="swiper-slide h-auto">
+                                    <div class="flex h-full w-full flex-col items-start justify-start overflow-hidden rounded-3xl bg-white pt-4 px-4">
                                         <div class="h-64 w-full flex items-center justify-center rounded-3xl bg-[#F2F5F7] relative">
                                             <img src="public/book.png" class="w-full max-w-[50%]" alt="">
                                             <div class="absolute top-6 right-6 bg-secondary w-[56px] h-[56px] rounded-full flex flex-col justify-center items-center text-white text-xs font-bold">
